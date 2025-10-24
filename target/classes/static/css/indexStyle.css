@@ -1,0 +1,99 @@
+body{
+    background-color:  rgb(18, 35, 18);
+    color: white;
+    margin-top: 150px;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center; /* centers horizontally */
+    align-items: center;     /* centers vertically */
+    height: 60px;            /* give it a height */
+    z-index: 1000;
+    padding: 30px;
+    background-color: rgb(18, 35, 18);
+   
+  }
+
+  .project{
+    margin-bottom: 70px;
+  }
+
+.page-title{
+    text-align: center;
+}
+
+.logs-page{
+    margin: 0px 0px 0px 100px;
+}
+
+button{
+    width: 150px;
+    height: 40px;
+    background-color: transparent;
+    color: rgb(251, 3, 3);
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+    font-size: 18px;
+}
+
+.test-design{
+    margin: 50px 0px 0px 100px;
+}
+
+/* .line-test-design{
+    border: none; 
+    height: 2px; 
+    background-color: black;
+    width: 500px;
+} */
+
+.test-title{
+    margin: 0 0 5px 5px;
+}
+.line-test{
+    height: 2px; 
+    background-color:rgb(249, 209, 5); 
+    width: 700px; 
+    margin: 1px 0 30px;
+}
+.test-logs{
+    margin-left: 50px;
+}
+
+.test-design-title{
+    margin: 0 0 5px 5px;
+}
+.line-test-design{
+    height: 2px; 
+    background-color:rgb(249, 209, 5); 
+    width: 600px; 
+    margin: 1px 0;
+}
+.test-case-title{
+    margin: 30px 0 5px 5px;
+}
+.line-test-case{
+    height: 2px; 
+    background-color:rgb(249, 209, 5); 
+    width: 300px; 
+    margin: 1px 0;
+}
+
+.test-cases{
+    display: flex;
+}
+
+.tc-1,.tc-2{
+    margin: 20px;
+    padding-left: 20px;
+}
+
+.project-2{
+    margin-bottom: 150px;
+}

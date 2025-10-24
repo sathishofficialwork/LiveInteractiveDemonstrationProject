@@ -1,0 +1,64 @@
+19:27:02.660 [main] INFO  testcases.TC01_Catalog - --> Starting execution in Chrome Browser
+19:27:03.723 [main] INFO  testcases.TC01_Catalog - --> Calling get url method
+19:27:03.723 [main] INFO  testcases.TC01_Catalog - --> Opening JPetstore url in the browser
+19:27:04.643 [main] INFO  testcases.TC01_Catalog - --> Maximize the browser
+19:27:04.698 [main] INFO  testcases.TC01_Catalog - --> Get the page title and print on the console==============yethuku
+19:27:04.725 [main] INFO  testcases.TC01_Catalog - --> Get List of options in the vertical
+19:27:04.806 [main] INFO  testcases.TC01_Catalog - --> Verifying list of vertical menu are not null using assertNotNull method
+19:27:04.809 [main] INFO  testcases.TC01_Catalog - --> Get List of options in the horizontal
+19:27:04.872 [main] INFO  testcases.TC01_Catalog - --> Verifying list of horizontal menu are not null using assertNotNull method
+19:27:04.872 [main] INFO  testcases.TC01_Catalog - --> Comparing both the list are equal
+19:27:04.872 [main] INFO  testcases.TC01_Catalog - --> Verifying comparation result is true using assertTrue method
+19:27:04.872 [main] INFO  testcases.TC01_Catalog - --> Making that list into single String with semi-colon separated string
+19:27:04.874 [main] INFO  testcases.TC01_Catalog - --> Calling writeTextInExcel method to write the list of option in the excel sheet by passing that single String
+19:27:05.527 [main] INFO  testcases.TC01_Catalog - --> Closing Browser
+19:27:05.528 [main] INFO  testcases.TC01_Catalog - ---------> End Of Test Case <---------
+19:27:05.622 [main] INFO  testcases.TC02_ProductDetails - --> Starting execution in Chrome Browser
+19:27:06.097 [main] INFO  testcases.TC02_ProductDetails - --> Calling get url method
+19:27:06.098 [main] INFO  testcases.TC02_ProductDetails - --> Opening JPetstore url in the browser
+19:27:06.985 [main] INFO  testcases.TC02_ProductDetails - --> Maximize the browser
+19:27:07.022 [main] INFO  testcases.TC02_ProductDetails - --> Get the page title and print on the console
+19:27:07.031 [main] INFO  testcases.TC02_ProductDetails - --> Retrieve the list of options from the Excel sheet that were written by the most recent test case.
+19:27:07.155 [main] INFO  testcases.TC02_ProductDetails - --> Calling reusable method to get product details by passing options one-by-one
+19:27:07.559 [main] INFO  testcases.TC02_ProductDetails - --> After entering to the particular option, it getting option title
+19:27:07.600 [main] INFO  testcases.TC02_ProductDetails - --> Verifying that it entered to the desired option or not by using assertEquals Method
+19:27:07.750 [main] INFO  testcases.TC02_ProductDetails - --> Getting list of products ID of that particular option
+19:27:07.800 [main] INFO  testcases.TC02_ProductDetails - --> Verifying list of product id is not null using assertNotNull method
+19:27:07.801 [main] INFO  testcases.TC02_ProductDetails - --> Getting list of products Name of that particular option
+19:27:07.851 [main] INFO  testcases.TC02_ProductDetails - --> Verifying list of product name is not null using assertNotNull method
+19:27:07.851 [main] INFO  testcases.TC02_ProductDetails - --> Calling writeTextInExcel method to write all product details to the excel sheet
+19:27:07.943 [main] INFO  testcases.TC02_ProductDetails - --> Navigating back to the Home page
+19:27:08.354 [main] INFO  testcases.TC02_ProductDetails - --> After entering to the particular option, it getting option title
+19:27:08.380 [main] INFO  testcases.TC02_ProductDetails - --> Verifying that it entered to the desired option or not by using assertEquals Method
+19:27:08.520 [main] INFO  testcases.TC02_ProductDetails - --> Getting list of products ID of that particular option
+19:27:08.569 [main] INFO  testcases.TC02_ProductDetails - --> Verifying list of product id is not null using assertNotNull method
+19:27:08.570 [main] INFO  testcases.TC02_ProductDetails - --> Getting list of products Name of that particular option
+19:27:08.630 [main] INFO  testcases.TC02_ProductDetails - --> Verifying list of product name is not null using assertNotNull method
+19:27:08.630 [main] INFO  testcases.TC02_ProductDetails - --> Calling writeTextInExcel method to write all product details to the excel sheet
+19:27:08.722 [main] INFO  testcases.TC02_ProductDetails - --> Navigating back to the Home page
+19:27:09.126 [main] INFO  testcases.TC02_ProductDetails - --> After entering to the particular option, it getting option title
+19:27:09.162 [main] INFO  testcases.TC02_ProductDetails - --> Verifying that it entered to the desired option or not by using assertEquals Method
+19:27:09.279 [main] INFO  testcases.TC02_ProductDetails - --> Getting list of products ID of that particular option
+19:27:09.300 [main] INFO  testcases.TC02_ProductDetails - --> Verifying list of product id is not null using assertNotNull method
+19:27:09.301 [main] INFO  testcases.TC02_ProductDetails - --> Getting list of products Name of that particular option
+19:27:09.322 [main] INFO  testcases.TC02_ProductDetails - --> Verifying list of product name is not null using assertNotNull method
+19:27:09.322 [main] INFO  testcases.TC02_ProductDetails - --> Calling writeTextInExcel method to write all product details to the excel sheet
+19:27:09.386 [main] INFO  testcases.TC02_ProductDetails - --> Navigating back to the Home page
+19:27:09.808 [main] INFO  testcases.TC02_ProductDetails - --> After entering to the particular option, it getting option title
+19:27:09.830 [main] INFO  testcases.TC02_ProductDetails - --> Verifying that it entered to the desired option or not by using assertEquals Method
+19:27:09.950 [main] INFO  testcases.TC02_ProductDetails - --> Getting list of products ID of that particular option
+19:27:09.970 [main] INFO  testcases.TC02_ProductDetails - --> Verifying list of product id is not null using assertNotNull method
+19:27:09.970 [main] INFO  testcases.TC02_ProductDetails - --> Getting list of products Name of that particular option
+19:27:09.993 [main] INFO  testcases.TC02_ProductDetails - --> Verifying list of product name is not null using assertNotNull method
+19:27:09.993 [main] INFO  testcases.TC02_ProductDetails - --> Calling writeTextInExcel method to write all product details to the excel sheet
+19:27:10.107 [main] INFO  testcases.TC02_ProductDetails - --> Navigating back to the Home page
+19:27:10.491 [main] INFO  testcases.TC02_ProductDetails - --> After entering to the particular option, it getting option title
+19:27:10.525 [main] INFO  testcases.TC02_ProductDetails - --> Verifying that it entered to the desired option or not by using assertEquals Method
+19:27:10.644 [main] INFO  testcases.TC02_ProductDetails - --> Getting list of products ID of that particular option
+19:27:10.669 [main] INFO  testcases.TC02_ProductDetails - --> Verifying list of product id is not null using assertNotNull method
+19:27:10.669 [main] INFO  testcases.TC02_ProductDetails - --> Getting list of products Name of that particular option
+19:27:10.693 [main] INFO  testcases.TC02_ProductDetails - --> Verifying list of product name is not null using assertNotNull method
+19:27:10.693 [main] INFO  testcases.TC02_ProductDetails - --> Calling writeTextInExcel method to write all product details to the excel sheet
+19:27:10.764 [main] INFO  testcases.TC02_ProductDetails - --> Navigating back to the Home page
+19:27:10.791 [main] INFO  testcases.TC02_ProductDetails - --> Closing Browser
+19:27:10.791 [main] INFO  testcases.TC02_ProductDetails - ---------> End Of Test Case <---------
