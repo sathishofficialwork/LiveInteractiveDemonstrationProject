@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="Width=device-width, initial-scale=1.0" />
+    <title>Result</title>
+    <!-- <link rel="stylesheet" href="F:/Portfolio/Portfolio/project/src/main/resources/static/css/resultStyle.css" /> -->
+    <link rel="stylesheet" href="/css/resultStyle.css" />
+
+    <script>
+        // const reloadButton = document.getElementById("reload-btn");
+        function fetchBackendMessage() {
+  //          document.getElementById('reload-btn').disabled = false;
+            fetch('/api/getMessage')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('output').innerText = data;
+                })
+                .catch(error => console.error('Error:', error));
+            document.getElementById('reload-btn').disabled = false;
+
+        }
+    </script>
+
+</head>
+
+<body>
+    <div class="project-1">
+        <!--p th:text="${str}">Default Message</p-->
+        <div class="page-title">
+            <h1>Results Of Project - 1</h1>
+        </div>
+        <div class="note">
+            <p><span class="note-title">Note:</span> This page will presents the results and build log from the most
+                recent GitHub workflow execution.</p>
+        </div>
+        <div class="sub-pages">
+            <div class="sub-titles">
+                <div class="sub-title-1">
+                    <h2>Result file of the execution:</h2>
+                    <div class="line"></div>
+                    <div class="sub-content-1">
+                        <form action="/downloadResults" method="post">
+                            <label class="result-btn-txt">To download the results of the Test case execution. Click
+                                here → </label>
+                            <button class="result-btn button" type="submit">Download Result</button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="sub-title-2">
+                    <h2>Log4J Log file of the execution:</h2>
+                    <div class="line"></div>
+                    <div class="sub-content-2">
+                        <form action="/downloadLog4j" method="post">
+                            <label class="log4j-btn-txt">To download the step by step execution progress of the Test
+                                case.
+                                Click
+                                here → </label>
+                            <button class="log4j-btn button" type="submit">Download Logs</button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="sub-title-3">
+                    <h2>Extend Report file of the execution:</h2>
+                    <div class="line"></div>
+                    <div class="sub-content-3">
+                        <form action="/downloadReport" method="post">
+                            <label class="report-btn-txt">To download the overall report of the Test case execution.
+                                Click
+                                here → </label>
+                            <button class="report-btn button" type="submit">Download Report</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="run-tc">
+                <h1>Start the build in GitHub action</h1>
+                <div class="line-2"></div>
+                <div class="run-github">
+                    <div class="start-btn">
+                        <form action="/submitData" method="post" th:action="@{/submitData}">
+                            <h4 class="start-button-label" for="userInput">To Start WorkFlow</h4>
+                            <!-- <input type="text" id="userInput" name="userInput" placeholder="Enter text here" /> -->
+                            <button id="startButton" onclick="triggerGithubWorkflow()" class="run-btn"
+                                type="submit">Run</button>
+                        </form>
+                    </div>
+                    <div class="note-text-execution">Note: It will take 1-1:30mins to complete the execution. But I set
+                        timer to 2mins, because sometimes it will take more than the usual time.</div>
+                    <div class="timerDisplay" id="timerDisplay"></div>
+                    <div class="status-btn">
+                        <label>Click Result to view the Execution status</label>
+                        <button id="result-check-btn" class="result-check-btn" onclick="fetchBackendMessage()"
+                            disabled>Result</button>
+
+                        <h3 id="output"></h3>
+                    </div>
+
+                    <div class="refresh-btn">
+                        <label>Click Reload to refresh the page, it will replace the old logs with the latest
+                            one. <br> If it fails, it will show old log for Console log</label>
+                        <button id="reload-btn" class="reload-btn" onclick="reloadPage()" disabled>Reload</button>
+                    </div>
+
+
+
+
+                    <!-- <button id="startButton" class="run-btn">Run</button> -->
+                    <!-- Display the countdown -->
+
+
+                    <!-- <div th:if="${messsage}">
+                        <h2>Result</h2>
+                        <p th:text="${message}"></p>
+                        <button id="newButton" disabled>New Button</button>
+                    </div> -->
+                    <!-- New button that gets enabled after timer completes -->
+
+                </div>
+            </div>
+        </div>
+        <div class="sub-title-4">
+            <h2>Console Results of the execution:</h2>
+            <div class="line"></div>
+
+            <div class="sub-content-4">
+                <h4 class="sub-content-title">Here, it will show the Console Results ↓</h4>
+                <div class="log-window-1">
+                    <ul class="logs-list">
+                        <th:block th:each="item : ${console}">
+                            <li th:text="${item}"></li>
+                        </th:block>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="sub-title-5">
+            <h2>Build Log of the GitHub Actions:</h2>
+            <div class="line"></div>
+            <div class="sub-content-5">
+                <h4 class="sub-content-title">Here, it will show the build log of the execution generated by GitHub
+                    Actions ↓</h4>
+                <div class="log-window">
+                    <ul class="logs-list">
+                        <th:block th:each="item : ${buildLog}">
+                            <li th:text="${item}"></li>
+                        </th:block>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+<!-- <script src="F:/Portfolio/Portfolio/project/src/main/resources/static/js/Script.js"></script> -->
+<script src="./js/Script.js"></script>
+
+</html>

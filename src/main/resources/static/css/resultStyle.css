@@ -1,0 +1,219 @@
+.log-window{
+    height: 500px;
+    width: 1300px;
+    color: white;
+    background-color: rgb(10, 10, 10);
+    border: 2px solid #ccc;
+    overflow: auto;
+    padding: 10px;
+
+
+    display: flex;
+    position: relative;
+    margin: 40px;
+    justify-content: center;
+}
+
+.log-window-1{
+    height: 500px;
+    width: 1300px;
+    color: white;
+    background-color: rgb(10, 10, 10);
+    border: 2px solid #ccc;
+    overflow: auto;
+    padding: 10px;
+
+
+    display: block;
+    margin: 40px;
+    /*position: relative;
+    margin: 40px;
+    justify-content: center;*/
+}
+body{
+
+    display: block;
+    position: absolute; 
+    /* background-color: rgba(19, 252, 2, 0.977); */
+    animation: colorChange 2s infinite alternate;
+}
+
+@keyframes colorChange {
+            0%   { background-color: rgba(19, 252, 2, 0.977); } /* blue */
+            100% { background-color:  rgb(18, 35, 18); } /* red */
+        }
+
+.project-1{
+    color: white;
+    padding-bottom: 30px;
+    background-color: rgb(18, 35, 18);
+    /* border: 40px solid  rgb(18, 35, 18); */
+}
+
+.title{
+    display: block;
+}
+
+ul.logs-list {
+   list-style: none; /* Removes default bullets */
+   padding-left: 0;
+}
+
+ul.logs-list li {
+    position: relative;
+    padding-left: 20px; /* Space for custom bullet */
+    margin-bottom: 8px;
+}
+
+ul.logs-list li::before {
+     content: "➤"; /* Your custom bullet (can be emoji, icon, etc.) */
+     position: absolute;
+     left: 0;
+     color: rgb(192, 192, 192);
+}
+
+.page-title{
+    display: grid;
+    text-align: center;
+}
+
+.note{
+    margin: 50px;
+    padding-left: 30px;
+}
+.note-title{
+    font-weight:bolder;
+}
+
+.sub-title-1,.sub-title-2,.sub-title-3,.sub-title-4,.sub-title-5{
+    margin: 50px 50px 0px 50px;
+}
+
+h2,h1{
+    padding-left: 5px;
+    margin-bottom: 0;
+}
+
+.sub-pages{
+    display: flex;
+}
+
+.button{
+    width: 150px;
+    height: 40px;
+    background-color: transparent;
+    color: rgb(251, 3, 3);
+    font-weight: bold;
+    border-radius: 10px;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.result-btn-txt,.report-btn-txt,.log4j-btn-txt,.sub-content-title{
+    padding-left: 30px;
+}
+
+.report-btn,.result-btn{
+    width: 180px;
+}
+
+.line{
+    height: 2px; 
+    background-color:rgb(249, 209, 5); 
+    width: 400px; 
+    margin: 1px 0;
+}
+
+.line-2{
+    height: 2px; 
+    background-color: rgb(249, 209, 5); 
+    width: 550px; 
+    margin: 1px 0;
+}
+
+
+.run-tc{
+    justify-content: center;
+    align-content: center;
+    align-self: center;
+    align-items: center;
+    text-align: center;
+}
+.run-btn{
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: bolder;
+    color: rgb(18, 35, 18);
+    background-color: rgb(249, 209, 5);
+    border: 3px solid  red;
+    outline: 3px solid red;   
+    outline-offset: 3px; 
+    transition: background-color 0.4s, color 0.4s, outline-color 0.4s;
+    cursor: pointer;
+     
+}
+
+.run-btn:hover{
+     background-color: red;
+      color: white;
+      border-color:  rgb(249, 209, 5);
+      outline-color: rgb(249, 209, 5);  /* Darker outline color on hover */
+}
+
+.active-run-btn{
+    font-size: 25px;
+     background-color: rgb(136, 32, 32);
+      color: white;
+      border-color:  rgb(231, 208, 89);
+      outline-color: rgb(231, 208, 89);  /* Darker outline color on hover */
+}
+
+.active-run-btn:hover{
+    font-size: 30px;
+     background-color: rgb(147, 65, 65);
+      color:red;
+      border-color:  rgb(236, 221, 147);
+      outline-color: rgb(236, 221, 147);  /* Darker outline color on hover */
+}
+
+
+.start-btn{
+    display: block;
+}
+
+.note-text-execution{
+    margin-top: 40px;
+    width: 500px; 
+}
+
+.timerDisplay{
+    margin-top: 20px;
+}
+
+.status-btn{
+    margin-top: 30px;
+}
+
+.result-check-btn:disabled, .reload-btn:disabled{
+ color: rgba(255, 0, 0, 0.537);
+}
+
+.result-check-btn, .reload-btn{
+    /* background-color:  rgb(249, 209, 5);
+    color: rgb(2, 90, 2);
+    border: 3px solid rgb(151, 159, 2); */
+    background-color: transparent;
+    color: red;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#output{
+    font-weight: bolder;
+}

@@ -1,0 +1,36 @@
+Title of the Page: JPetStore Demo
+List of Options: [Fish, Dogs, Cats, Reptiles, Birds]
+List of Options: [Fish, Dogs, Reptiles, Cats, Birds]
+Successfully output writen in Excel😍!!...
+Title of the Page: JPetStore Demo
+Show the selected catalog: Fish
+Product ID    Name
+FI-SW-01    Angelfish
+FI-SW-02    Tiger Shark
+FI-FW-01    Koi
+FI-FW-02    Goldfish
+Successfully output writen in Excel😍!!...
+Show the selected catalog: Dogs
+Product ID    Name
+K9-BD-01    Bulldog
+K9-PO-02    Poodle
+K9-DL-01    Dalmation
+K9-RT-01    Golden Retriever
+K9-RT-02    Labrador Retriever
+K9-CW-01    Chihuahua
+Successfully output writen in Excel😍!!...
+Show the selected catalog: Cats
+Product ID    Name
+FL-DSH-01    Manx
+FL-DLH-02    Persian
+Successfully output writen in Excel😍!!...
+Show the selected catalog: Reptiles
+Product ID    Name
+RP-SN-01    Rattlesnake
+RP-LI-02    Iguana
+Successfully output writen in Excel😍!!...
+Show the selected catalog: Birds
+Product ID    Name
+AV-CB-01    Amazon Parrot
+AV-SB-02    Finch
+Successfully output writen in Excel😍!!...

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="Width=device-width, initial-scale=1.0" />
+    <title>Project</title>
+    <!-- <link rel="stylesheet" href="F:/Portfolio/Portfolio/project/src/main/resources/static/css/indexStyle.css" /> -->
+    <link rel="stylesheet" href="/css/indexStyle.css" />
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="page-title">
+            <h1>Live Interactive Demonstration of a Selenium Automation Project</h1>
+        </div>
+    </header>
+
+    <div class="project project-1">
+        <div class="logs-page">
+            <h1 class="test-title">Project - 1</h1>
+            <div class="line-test"></div>
+            <div class="test-logs">
+                <form action="/result" method="post">
+                    <label class="log-btn-txt">To View the Project Logs, Results and you can able to run the Test case
+                        from here. Click here → </label>
+                    <button class="log-btn" type="submit">Open Result </button>
+                </form>
+                <h7>(Note: but You can't able view).</h7>
+            </div>
+        </div>
+
+        <div class="test-design">
+            <h3 class="test-design-title">Sequence of Actions Performed by the Automation Script:</h3>
+            <div class="line-test-design"></div>
+            <!-- <hr class="line-test-design"> -->
+            <div class="test-cases">
+                <div class="tc-1">
+                    <h4 class="test-case-title">Test Case: 01</h4>
+                    <div class="line-test-case"></div>
+                    <ul>
+                        <li>Step-1:<p>Open the JPetshop in the Browser.</p>
+                        </li>
+                        <li>Step-2:<p>Verify Browser opened the correct URL.</p>
+                        </li>
+                        <li>Step-3:<p>Collect list of options that present both in the vertical and Horizontal of the
+                                page.
+                            </p>
+                        </li>
+                        <li>Step-4:<p>Verify both the list are not empty.</p>
+                        </li>
+                        <li>Step-5:<p>And also Verify both the list are same.</p>
+                        </li>
+                        <li>Step-6:<p>Store that list of options in the Excel sheet.</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tc-2">
+                    <h4 class="test-case-title">Test Case: 02 (Depends on test case - 1)</h4>
+                    <div class="line-test-case"></div>
+                    <ul>
+                        <li>Step-1:<p>Open the JPetshop in the Browser.</p>
+                        </li>
+                        <li>Step-2:<p>Verify Browser opened the correct URL.</p>
+                        </li>
+                        <li>Step-3:
+                            <p>Collect list of options from excel sheet that created with the help of previous test
+                                case.</p>
+                        </li>
+                        <li>Step-:4<p>With the help of the collected list enter into the particular option.</p>
+                        </li>
+                        <li>Step-5:<p>Collect all Product ID and Product Name.</p>
+                        </li>
+                        <li>Step-6:<p>Store the collected data into the excel sheet.</p>
+                        </li>
+                        <li>Step-7:<p>Repeat the process for every options in the list.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="project project-2">
+        <div class="logs-page">
+            <h1 class="test-title">Project - 2</h1>
+            <div class="line-test"></div>
+            <div class="test-logs">
+                <h3>Coming soon!...</h3>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
